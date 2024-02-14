@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+}
+
+li {
+  margin-top: 3px;
+  font-weight: normal;
+}
+
+.price {
+  font-style: italic;
+
+  color: red;
+}
+
+.sidebar--container {
+  padding-top: 20px;
+  padding-right: 20px;
+  margin-left: 30px;
+  border-right: solid 2px black;
+  width: 300px;
+  user-select: none;
+}
+
+.menu--container {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list--title {
+  font-weight: bold;
+}
+
+ul {
+  cursor: default;
+}
+
+.hide {
+  display: none;
+}
+
+.list--title:hover {
+  cursor: pointer;
+}
+
+.list--title::before {
+  content: "-";
+}
+.plus::before {
+  content: "+";
+}
