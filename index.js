@@ -2,9 +2,8 @@ import "./reset.css";
 import "./styles.css";
 
 const sidebarMenu = document.querySelector("#sidebarMenu");
-const data = null;
 
-const getData = async () => {
+const getDataAndRender = async () => {
   try {
     const response = await fetch(
       "https://my-json-server.typicode.com/AntonSolyanick/fakeApi/db"
@@ -82,5 +81,5 @@ const addListener = () => {
   );
 };
 
-getData();
+getDataAndRender();
 addListener();
